@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Privacy Policy — video-test</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        body { font-family: system-ui, sans-serif; max-width: 720px; margin: 3em auto; padding: 0 1em; color: #222; line-height: 1.55; }
+        a { color: #0366d6; }
+        h1 { margin-bottom: .2em; }
+        h2 { margin-top: 2em; }
+        .muted { color: #666; }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy</h1>
+    <p class="muted">Last updated: 2026-04-18</p>
+
+    <p>video-test is a personal, single-user automation tool. It does not
+       operate as a public service and does not collect data from third
+       parties.</p>
+
+    <h2>1. Data we process</h2>
+    <p>When the operator (the only user) signs in with TikTok via the
+       Login Kit, video-test receives and stores the following information
+       locally on the operator's machine:</p>
+    <ul>
+        <li>OAuth access and refresh tokens</li>
+        <li>The operator's TikTok open_id, union_id, display name and avatar URL</li>
+    </ul>
+    <p>This information is kept in a local PostgreSQL database on the
+       operator's own server and is never transmitted to any third party.</p>
+
+    <h2>2. Content</h2>
+    <p>video-test downloads publicly accessible video URLs supplied by the
+       operator, processes them locally, and uploads the result to the
+       operator's own TikTok account via the Content Posting API.
+       No content belonging to other TikTok users is accessed or stored.</p>
+
+    <h2>3. Third-party services</h2>
+    <p>Outbound requests are made to: TikTok (Login Kit / Content Posting API)
+       and OpenRouter.ai (LLM text generation). No user data beyond the OAuth
+       flow described above is sent to these services.</p>
+
+    <h2>4. Retention</h2>
+    <p>Tokens and metadata are retained until the operator deletes the local
+       database or revokes access from within TikTok's app settings.</p>
+
+    <h2>5. Rights</h2>
+    <p>The operator can revoke the application's TikTok access at any time
+       via TikTok's privacy settings. Doing so will invalidate the stored
+       tokens.</p>
+
+    <h2>6. Contact</h2>
+    <p>Questions, concerns or takedown requests:
+       <a href="mailto:skobeev.n.a@gmail.com">skobeev.n.a@gmail.com</a>.</p>
+</body>
+</html>
